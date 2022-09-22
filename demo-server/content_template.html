@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{service} server</title>
+    <style>
+      span {{
+        display: inline-block;
+        text-align: center;
+        white-space: normal;
+        word-break: break-word;
+        padding: 40px 20px;
+        font-family: monospace;
+      }}
+      div {{
+        display: flex;
+        align-items: center;
+      }}
+      img {{
+        padding: 10px 10px;
+      }}
+    </style>
+  </head>
+  <body bgcolor=#000 text=#999>
+	<h2>Connected to {service} server</h2>
+    <div>
+      <span>
+        <img src=client.png width=100 height=100 />
+        <table>
+          <tr><td align=right>ip</td><td align=left>{client_ip}</td></tr>
+          <tr><td align=right>name</td><td align=left>{client_name}</td></tr>
+          <tr><td align=right>port</td><td align=left>{client_port}</td></tr>
+        </table>
+      </span>
+      <span>
+        <img src=router.png width=50 height=50  />
+      </span>
+      <span>
+        <img src=server.png width=100 height=100  />
+        <table>
+          <tr><td align=right>ip</td><td align=left>{server_ip}</td></tr>
+          <tr><td align=right>name</td><td align=left>{server_name}</td></tr>
+          <tr><td align=right>port</td><td align=left>{server_port}</td></tr>
+        </table>
+      </span>
+    </div>
+  </body>
+</html>
